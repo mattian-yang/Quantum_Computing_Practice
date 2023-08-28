@@ -1,5 +1,6 @@
 # Import math library for calculation
 import math
+from fractions import Fraction
 
 # Define ComplexNumber class
 class ComplexNumber:
@@ -150,8 +151,9 @@ class ComplexNumber:
 
     def __pow__(self, other):
         """
-        Take exponential of the complex number.
+        Take exponential of the complex number, where the power is a real number.
         This is performed using polar form.
+        Output is a tuple as fractional power will yield more than one complex number.
         """
 
         if not isinstance(self, ComplexNumber):
@@ -159,7 +161,37 @@ class ComplexNumber:
         elif not isinstance(other, (int, float)):
             raise TypeError("Power value can only be numeric.")
         else:
-            return ComplexNumber(magnitude=self.magnitude**other, phase=self.phase*other, form="polar")
+            result = tuple()
+            complex_one = ComplexNumber(1, 0)
+            power = abs(other)
+            if isinstance(other, int):
+                if other >= 0:
+                    result = tuple([ComplexNumber(magnitude=self.magnitude**power, phase=self.phase*power, form="polar")])
+                else:
+                    result = tuple([complex_one.__truediv__(\
+                                  ComplexNumber(magnitude=self.magnitude**power, phase=self.phase*power, form="polar"))])
+            else:
+                power_num = Fraction(power).limit_denominator()._numerator
+                power_den = Fraction(power).limit_denominator()._denominator
+                if other >= 0:
+                    result = tuple([ComplexNumber(magnitude=self.magnitude**other, \
+                                                phase=(self.phase+2*k*math.pi)/power_den*power_num, form="polar") \
+                                      for k in range(power_den)])
+                else:
+                    result = tuple([complex_one.__truediv__(\
+                                  ComplexNumber(magnitude=self.magnitude**other, \
+                                                phase=(self.phase+2*k*math.pi)/power_den*power_num, form="polar")) \
+                                      for k in range(power_den)])
+            # print some results out
+            i = 0
+            while i < min(len(result), 10):
+                result[i].print_general_form()
+                i += 1
+            if len(result) > 10:
+                print("......")
+
+            return result
+
 
 
 # Run through some unit tests
@@ -214,13 +246,29 @@ class TestComplexNumber(unittest.TestCase):
         self.assertEqual(c_mul1, c_mul2)
 
     
-    def test_exponential(self):
-        c1= ComplexNumber(3, 4)
+    def test_exponential1(self):
+        c1 = ComplexNumber(3, 4)
         c_pow2_1 = c1 ** 2
         c_pow2_2 = c1 * c1
 
-        self.assertEqual(c_pow2_1, c_pow2_2)
-
+        self.assertEqual(c_pow2_1[0], c_pow2_2)
+    
+    
+    def test_exponential2(self):
+        c2 = ComplexNumber(1, 0)
+        c_pow1o5 = c2 ** 0.2
+ 
+        self.assertEqual(c_pow1o5[1].degree, 72)
+    
+    
+    def test_exponential3(self):
+        c3 = ComplexNumber(1, 0)
+        c_pow1o5 = c3 ** 0.2
+        c_pown1o5 = c3 ** -0.2
+        
+        self.assertEqual(c_pow1o5[1].conjugate(), c_pown1o5[1])
+        
+        
 # Run unittest as the main module
 if __name__ == '__main__':
     # if run in jupyter:
