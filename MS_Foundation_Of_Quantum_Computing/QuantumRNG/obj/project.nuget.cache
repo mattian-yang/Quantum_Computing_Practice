@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G35YOO+Fay+7Dn0KWEWaowIKx96FkXB5p4cV1BwxEX3ffCdUV658wQRg0nycyTZXS9lOxfrHSkEi3emt22ER4Q==",
+  "dgSpecHash": "aQNTUgBjunrZ6ARocZ83x5CH0EWeraHzazNg4UY5kKCGaMpjikoSkZx0u3ClgYftiuy0vhc04y6OG4QzH5C7Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
+  "projectFilePath": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matt_\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\matt_\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",

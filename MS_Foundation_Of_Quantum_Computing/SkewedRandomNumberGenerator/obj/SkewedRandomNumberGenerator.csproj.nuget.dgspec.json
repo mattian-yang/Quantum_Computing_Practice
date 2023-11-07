@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\SkewedRandomNumberGenerator\\SkewedRandomNumberGenerator.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\SkewedRandomNumberGenerator\\SkewedRandomNumberGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\SkewedRandomNumberGenerator\\SkewedRandomNumberGenerator.csproj",
+        "projectName": "SkewedRandomNumberGenerator",
+        "projectPath": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\SkewedRandomNumberGenerator\\SkewedRandomNumberGenerator.csproj",
+        "packagesPath": "C:\\Users\\matt_\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\SkewedRandomNumberGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\matt_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Quantum.CSharpGeneration": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.28.302812, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.EntryPointDriver": {
+              "target": "Package",
+              "version": "[0.28.302812, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.QSharp.Core": {
+              "target": "Package",
+              "version": "[0.28.302812, )"
+            },
+            "Microsoft.Quantum.Runtime.Core": {
+              "target": "Package",
+              "version": "[0.28.302812, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.Standard": {
+              "target": "Package",
+              "version": "[0.28.302812, )"
+            },
+            "Microsoft.Quantum.Targets.Interfaces": {
+              "target": "Package",
+              "version": "[0.28.302812, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

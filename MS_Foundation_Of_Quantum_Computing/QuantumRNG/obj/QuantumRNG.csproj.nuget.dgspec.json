@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj": {}
+    "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj": {
+    "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
+        "projectUniqueName": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
         "projectName": "QuantumRNG",
-        "projectPath": "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
+        "projectPath": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\QuantumRNG.csproj",
         "packagesPath": "C:\\Users\\matt_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\obj\\",
+        "outputPath": "c:\\Users\\matt_\\OneDrive\\Desktop\\Code_Repo\\Quantum_Computing_Practice\\MS_Foundation_Of_Quantum_Computing\\QuantumRNG\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matt_\\AppData\\Roaming\\NuGet\\NuGet.Config"
